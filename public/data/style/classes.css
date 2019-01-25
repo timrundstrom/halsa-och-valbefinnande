@@ -1,0 +1,34 @@
+/* CLASSES */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flexRow {
+    flex-direction: row;
+}
+
+.flexSpaceBetween {
+    justify-content: space-around;
+}
+
+.contentSection {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 90vh;
+    z-index: 3;
+    transition: 0.2s;
+}
+
+.hidden {
+    display: none;
+    opacity: 0.0;
+}
+
+.blur {
+    filter: blur(10px);
+}
