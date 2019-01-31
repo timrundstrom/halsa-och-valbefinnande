@@ -1,26 +1,27 @@
 $(() => {
-    $(document).on("click", "#pg1", function() {
-        $("#pg1").addClass("hidden");
-        $("#pg2").removeClass("hidden");
-    })
 
-    $(document).on("click", "#pg2", function() {
-        $("#pg2").addClass("hidden");
-        $("#pg3").removeClass("hidden");
-    })
+    startSlideshow();
 
-    $(document).on("click", "#pg3", function() {
-        $("#pg3").addClass("hidden");
-        $("#pg4").removeClass("hidden");
-    })
-
-    $(document).on("click", "#pg4", function() {
-        $("#pg4").addClass("hidden");
-        $("#pg1").removeClass("hidden");
-    })
-
-    $("li label").hover(_ => {
-        $("#pg1").toggleClass("blur");
-        $("#background").toggleClass("blur");
+    flipper();
+    
+    $("nav ul li").hover(_ => {
+        $(".contentSection, #background").toggleClass("blur");
     });
 });
+
+let startSlideshow = () => {
+
+    $("#background").backstretch([
+        "/data/images/flowerMeadow.jpg",
+        "/data/images/flyingBike.jpg",
+        "/data/images/mountainSummerLake.jpg"
+
+    ], {    duration: 15000,
+            transition: "fade",
+            transitionDuration: 1200,
+            scale: "fill" });
+}
+
+let flipper = () => {
+    $(".my-flipster").flipster();
+}
