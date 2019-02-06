@@ -36,6 +36,11 @@ Free for commercial use and changes. (CC0 Public Domain)
 Changes: None
 Taken from: https://pxhere.com/en/photo/1033231
 
+-**Leaf**
+Free for commercial use and changes. (CC0 Public Domain)
+Changes: Background (Removed white background)
+Taken from: https://pxhere.com/en/photo/9571395 
+
 -**Hjälstaviken**
 Free for commercial use and changes. (CC BY-SA 4.0)
 Changes: Resolution (from: 1717×997, to: 1920×1080)
