@@ -23,5 +23,5 @@ let startSlideshow = () => {
 }
 
 let flipper = () => {
-    $(".my-flipster").flipster();
+    $("#coverflow").flipster();
 }

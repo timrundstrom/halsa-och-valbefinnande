@@ -24,3 +24,8 @@
     filter: blur(10px);
     -webkit-filter: blur(10px);
 }
+
+.contentSection {
+    width: 80vw;
+    height: 50vh;
+}
