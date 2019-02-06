@@ -23,7 +23,7 @@ All photos contain one of the licences specified below.
 
 Types of licences used: Pixabay licence, CC0 Public Domain, CC BY-SA 4.0.
 
-Information about invividual photos given below:
+Information about invividual photos provided below:
 
 ## Used Photos' lincenses and recognition.
 - **Avenue**
