@@ -1,5 +1,5 @@
 # Hälsa och välbefinnande
-Group project for a technology class at NTI-gymnasiet Södertälje (2019).
+Group project by a technology class at NTI-gymnasiet Södertälje (2019).
 
 ## Author/s
 - **StefaK**
