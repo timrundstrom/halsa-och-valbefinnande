@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Asap');
 @import url("/data/style/variables.css");
 @import url("/data/style/classes.css");
 
@@ -7,8 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    transition: 10s;
+    font-family: "Asap", sans-serif;
 }
 
 html, body {
@@ -23,7 +22,7 @@ body {
 body nav {
     width: 100%;
     height: 10vh;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0);
     z-index: 3;
 }
 
@@ -34,8 +33,8 @@ body #background {
     top: 0;
     width: 100%;
     height: 100vh;
-    background: var(--main-background);
     background-size: 100% 100%;
+    transition: 0.2s;
 }
 
 body nav ul {
@@ -47,20 +46,36 @@ body nav ul {
 }
 
 body nav ul li {
+    width: 10%;
     height: 5vh;
     z-index: 5;
     line-height: 5vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    transition: 0.2s;
 }
 
-body nav ul li label  {
-    z-index: 4;
+body nav ul li:hover {
+    cursor: pointer;
+    transform: scale(1.5);
 }
 
-body #content {
+body #coverflow {
     width: 100%;
-    height: 90vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: var(--contentHeight);
     color: white;
     z-index: 2;
     transition: 0.2s;
+}
+
+body #coverflow ul, body #coverflow ul li {
+    width: 100%;
+    height: var(--contentHeight);
+}
+
+#introTitle {
+    width: 100%;
+    height: var(--contentHeight);
+    background-image: url("/data/images/leave.jpg");
+    background-size: 100% 100%;
 }
