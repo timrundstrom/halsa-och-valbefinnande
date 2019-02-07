@@ -86,6 +86,10 @@ Taken from: https://pxhere.com/en/photo/9571395
 
 Free for commercial use and changes. (CC BY-SA 4.0)
 
+Under the following terms:
+- Attribution - You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+- ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+
 Changes: Resolution (from: 1717×997, to: 1920×1080)
 
 Taken from: https://sv.wikipedia.org/wiki/Fil:Hj%C3%A4lstaviken_02.jpg 
