@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>Om oss sida</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="scrolling.css">
+    <link rel="stylesheet" type="text/css" href="topbar.css">
+    <link rel="stylesheet" type="text/css" href="text.css">
+
+</head>
+
+<body>
+
+    <section class="sec1"></section>
+    <section class="sectext">
+            
+        <h1>Om oss sida</h1>
+
+    </section>
+        
+    <div class="box">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav>
+
+    	<div class="logo">
+    	
+    		<img src="logo.png">
+
+    	</div>
+
+    	<ul>
+    		
+    		<li><a href="#">STARTSIDA</a></li>
+    		<li><a href="#">VÅR SKOLA</a></li>
+    		<li><a href="#">PROGRAM</a></li>
+    		<li><a href="#">ÖPPET HUS</a></li>
+
+    	</ul>
+
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if ($(this).scrollTop())
+                {
+                    $(".box").css({"opacity" : "0"})
+                    $('nav').addClass('black');
+                }
+
+                else
+                {
+                    $(".box").css({"opacity" : "1"})
+               		$('nav').removeClass('black');
+                }
+
+            })
+        })
+    </script> 
+</body>
+</html>
