@@ -1,12 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Secular+One');
-section.sectext
-{
+
+section.sectext{
+	height: 89vh;
+    width: 100%;
+	background-color: #f6f6f6;
 	background-position: center;
 	line-height: 100px;
 	font-size: 48px;
 	color: #242424;
 	font-family: 'Secular One';
 	transform: uppercase;
+}
+
+section.sectext h1{
+    margin: 0;
+    padding: 0;
+	font-size: 48px;
+	text-align: center;
+	position: relative;
+	top: 50px;
+	font-family: 'Asap', sans-serif;
+	font-weight: bold;
+}
+
+section.sectext div.stycke{
+	font-family: 'Asap';
+	width: 1000px;
+	position: relative;
+	line-height: 50px;
+	font-size: 35px;
+	margin: 10px auto;
+	padding-top: 50px;
+}
+div.stycke p{
+	padding-top: 50px;
 }
 
 

@@ -33,14 +33,21 @@ $(document).ready(function(){
     }
     /* Annars sätt NTI bild (eftersom det är garanterat om-oss)
     Om fler sidor ska läggas till så ändra lägg till en else if.*/
-    else{img.style.backgroundImage = "url(../images/NTI.png)";}
+    else{
+        img.style.backgroundImage = "url(../images/NTI.png)";
+    }
+})
+
+$(document).ready(function(){
+    const box = document.getElementById("box");
+    box.addEventListener("click", function(){$(window).scrollTop(858)})
 })
 
 function parallax(){
     img.classList.add('notransition');
 
     const st = $(this).scrollTop();
-    const newValue = 150 - st / 20;
+    const newValue = 150 - st / 20; // ändra nämnaren till st för att ändra zoom speed.
     img.style.backgroundSize = `${newValue}%`;
 
     img.offsetHeight;

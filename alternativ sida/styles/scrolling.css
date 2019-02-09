@@ -6,6 +6,10 @@
 	transition: 0.5s;
 }
 
+.box:hover{
+	cursor: pointer;
+}
+
 .box span{
 	background-attachment: fixed;
 }
