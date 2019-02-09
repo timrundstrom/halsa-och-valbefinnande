@@ -66,7 +66,7 @@ Taken from: https://pixabay.com/sv/v%C3%A5ren-tr%C3%A4det-blommor-%C3%A4ng-27601
 
 Free for commercial use and changes. (CC0 Public Domain)
 
-Changes: None
+Changes: Resolution (from: 7360×3779, to: 1920×1080)
 
 Taken from: https://pxhere.com/en/photo/1033231
 
