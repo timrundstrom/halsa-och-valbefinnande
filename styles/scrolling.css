@@ -50,11 +50,3 @@
 	}
 }
 
-div#anchor{
-	position: absolute;
-	height: 80px;
-	width: 80px;
-	top: 858px;
-	left: 860px;
-	z-index: -1;
-}
