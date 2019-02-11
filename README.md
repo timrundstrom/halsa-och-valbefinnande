@@ -1,17 +1,6 @@
 # Hälsa och välbefinnande
 Group project by a technology class at NTI-gymnasiet Södertälje (2019).
 
-# Getting started
-
-## Development Prerequisites
-* [Node.js](https://nodejs.org/en/)
-
-## Running the development server
-1. Navigate to the project root directory using using your desired command-line tool.
-2. Run: ```npm i``` 
-3. Run: ```npm start```
-4. Using your browser go to localhost:8181
-
 # Author/s
 - **StefaK**
 - **timrundstrom**
