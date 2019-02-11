@@ -4,7 +4,7 @@ Group project by a technology class at NTI-gymnasiet Södertälje (2019).
 # Author/s
 - **StefaK**
 - **timrundstrom**
-- **DiabloBound**
+- **MR_5**
 - **KRISTOFFER9918**
 
 # Licence
