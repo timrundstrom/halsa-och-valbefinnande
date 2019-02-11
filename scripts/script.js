@@ -1,55 +1,48 @@
-const img = document.getElementById("pic");
+const $img = $('#pic')
 
-$(document).ready(function(){
+const sliderImages = ['avenue', 'backpack', 'daisy', 'grassfield', 'hjalstaviken', 'jump', 'rooftop']; // Pictures to show on slider.
+const sliderTimer = 5000; // Delay between images (ms)
+const parallaxZoomSpeed = 20; // Denominator in parallax size differense
+
+$(function(){
     $(window).scroll(function(){
-        if ($(this).scrollTop())
-        {
-            $(".box").css({"opacity" : "0"})
+        if ($(this).scrollTop()){
+            $('.box').css({'opacity' : '0'})
             $('nav').addClass('black');
-        }
-
-        else
-        {
-            $(".box").css({"opacity" : "1"})
+        } else {
+            $('.box').css({'opacity' : '1'})
             $('nav').removeClass('black');
         }
         parallax()
     })
-
-    // Ifall det är index.html som är laddat ska bilderna bytas efter varje intervall.
-    const url = window.location.pathname;
-    const filename = url.substring(url.lastIndexOf('/')+1);
-    if (filename === "index.html"){
-        // Bilder att slideshowa och delay mellan (OBS! transition är 1s)
-        const images = ["avenue", "backpack", "daisy", "grassfield", "hjalstaviken", "jump", "rooftop"];
-        const slidetime = 5000;
-        let index = images.length;
-        img.style.transition = "all 1s ease";
-        setInterval(function(){
-            if (index === images.length){index = 0;}
-            img.style.backgroundImage = `url(../images/${images[index]}.jpg)`;
-            index++;
-        }, slidetime)
-    }
-    /* Annars sätt NTI bild (eftersom det är garanterat om-oss)
-    Om fler sidor ska läggas till så ändra lägg till en else if.*/
-    else{
-        img.style.backgroundImage = "url(../images/NTI.png)";
-    }
-})
-
-$(document).ready(function(){
-    const box = document.getElementById("box");
-    box.addEventListener("click", function(){$(window).scrollTop(858)})
+    slider()
 })
 
 function parallax(){
-    img.classList.add('notransition');
+    $img.addClass('notransition')
 
     const st = $(this).scrollTop();
-    const newValue = 150 - st / 20; // ändra nämnaren till st för att ändra zoom speed.
-    img.style.backgroundSize = `${newValue}%`;
+    const newValue = 150 - st / parallaxZoomSpeed;
+    $img.css( 'backgroundSize' , `${newValue}%` )
 
-    img.offsetHeight;
-    img.classList.remove('notransition')
+    $img[0].offsetHeight;
+    $img.removeClass('notransition' );
+}
+
+function slider(){
+    if ( $img.is( '.main' ) ){
+        let index = 1;
+        $img.css( 'transition' , 'all 1s ease' );
+
+        setInterval(function(){
+            if (index === sliderImages.length){
+                index = 0;
+            }
+            $img.css( 'backgroundImage' , `url(../images/slider_images/${sliderImages[index]}.jpg)` );
+            index++;
+        }, sliderTimer)
+
+    }else{
+        $img.css( 'backgroundImage' , 'url(../images/nti_images/NTI.png)' );
+    }
 }
