@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../styles/scrolling.css">
     <link rel="stylesheet" type="text/css" href="../styles/topbar.css">
     <link rel="stylesheet" type="text/css" href="../styles/text.css">
+    <link rel="stylesheet" type="text/css" href="../styles/flipcard.css">
 </head>
 
 <body>
@@ -33,9 +34,9 @@
             <div class="widepic" id="mountain"></div>
         </div>
 
-        <h1>Hur kan du hjälpa?</h1>
+        <h1 id="rubrik">Hur kan du hjälpa?</h1>
         <div class="stycke">
-            <h2>volontär arbete på sjukhus</h2>
+            <h2 id="underrubrik">volontär arbete på sjukhus</h2>
             <p>
                 Spendera din egen tid med att hjälpa andra. Sjukhus tar gärna emot volontärer vilket kan underlätta deras jobb.
                 Som volontär kan du omhänderta enkla situationer som att vägleda patienter eller assistera vårdpersonal vilket gör att
@@ -44,7 +45,7 @@
                 välkomnar dig med öppna armar.
             </p>
 
-            <h2>Minskad användning av kemikalier</h2>
+            <h2 id="underrubrik">Minskad användning av kemikalier</h2>
             <p>
                 Ta en titt på dig själv och se ifall du kanske använder kemikalier i vardagen vilket kan enkelt undvikas. Man har nu 
                 vetat ett långt tag att kemikalier påverkar natur och hälsa negativt och många jobbar aktivt för att hitta ersättare 
@@ -52,7 +53,7 @@
                 några flaskor medel.
             </p>
 
-            <h2>Vaccinera dig aktivt</h2>
+            <h2 id="underrubrik">Vaccinera dig aktivt</h2>
             <p>
                 Se till att hålla dig själv friskare; om du inte är sjuk behäver du inte använda dig utav mediciner och vård
                 vilket någon annan kan behöva mer. Genom att hålla dig friskare och bygga upp ett startare immunförsvar kan alla
@@ -65,12 +66,106 @@
             <div class="widepic" id=""></div> <!--Byta ut bild.-->
         </div>
 
-        <h1>målen</h1>
-        <!--Vi kan antingen ha rutor med mål som på om-oss sidan vilket skulla vara najs (samma css = pluspoäng hos Tobias.)
-        Eller så skriver vi något annat, nytt.-->
+        <h1 id="rubrik">målen</h1>
 
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../images/author_images/kristoffer.jpg" alt="Kristoffer Barsum">
+                </div>
+                <div class="flip-card-back" id="fc-röd">
+                    <h1 class="fc-titlemål">Mödradödligheten</h1>
+                    <h2 class="fc-mål">Mål 3.1</h2>
+                    <p id="fc-p">
+                        Målen är att sänka mödradödligheten från 1000 dödsfall per 100,000 förlossning till 70 dödsfall. I fattiga
+                        länder har mödradödligheten blivit ett problem på grund av deras tendens att skaffa stora familjer trots
+                        deras dåliga sjukvård.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../images/author_images/kristoffer.jpg" alt="Kristoffer Barsum">
+                </div>
+                <div class="flip-card-back" id="fc-blå">
+                    <h1 class="fc-titlemål">Förhindra dödsfall</h1>
+                    <h2 class="fc-mål">Mål 3.2</h2>
+                    <p id="fc-p">År 2030 ska vi sträva om att inga spädbarn eller barn under 5 år ska dö av orsaker 
+                        som kan förebyggas. Idag har vi 25 dödsfall per 1000 levande födda målet är att alla länder
+                        bör samarbeta för att minska den antalet dödligheten till 12 dödsfall per 1000 döda.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../images/author_images/kristoffer.jpg" alt="Kristoffer Barsum">
+                </div>
+                <div class="flip-card-back" id="fc-grön">
+                    <h1 class="fc-titlemål">Sjukdomar</h1>
+                    <h2 class="fc-mål">Mål 3.3</h2>
+                    <p id="fc-p">I 2016 blev 18,000 personer Aids diagnoserade. Målet är att utrota epidemier som aids, 
+                        tuberkulos, malaria och försummade tropiska sjukdomar samt bekämpa hepatit, vattenburna sjukdomar 
+                        och andra smittsamma sjukdomar intill 2030. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../images/author_images/kristoffer.jpg" alt="Kristoffer Barsum">
+                </div>
+                <div class="flip-card-back" id="fc-lila">
+                    <h1 class="fc-titlemål">Drogmissbruk</h1>
+                    <h2 class="fc-mål">Mål 3.5</h2>
+                    <p id="fc-p">
+                        Alkoholmissbruk, drogmissbruk och även narkotikamissbruk är ett stort problem idag vi ska satsa
+                        på att höja insatserna så vi kan förhindra och behandla det på ett bättre sätt.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="stycke">
+            <p>
+                För att se resterande mål, besök <a href="https://www.globalamalen.se" target="_blank">Globala målen</a> eller läs mer
+                på <a href="https://www.globalamalen.se/om-globala-malen/mal-3-halsa-och-valbefinnande/" target="_blank">
+                hälsa och välbefinnande</a>
+            </p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <footer>
+            <ul id="footer-left">
+                <li><a href="https://www.ntigymnasiet.se/sodertalje/" target="_blank">NTI-gymnasiet</a></li>
+                <li><a href="https://www.ntigymnasiet.se/program/informations-och-medieteknik/sodertalje/" target="_blank">Teknik Programmet</a></li>
+                <li><a href="https://www.ntigymnasiet.se/sodertalje/oppet-hus/" target="_blank">Öppet hus</a></li>
+            </ul>
+            <a href="https://www.ntigymnasiet.se/sodertalje/" target="_blank"><img src="../images/nti_images/logo.png"></a>
+            <ul id="footer-right">
+                <li><a href="https://www.ntigymnasiet.se/sodertalje/kontakta-oss/" target="https://www.ntigymnasiet.se/sodertalje/kontakta-oss/">Kontakt:</a></li>
+                <li><a href="https://www.ntigymnasiet.se/sodertalje/kontakta-oss/" target="https://www.ntigymnasiet.se/sodertalje/kontakta-oss/">08-550 838 52</a></li>
+                <li><a href="https://www.ntigymnasiet.se/sodertalje/kontakta-oss/" target="https://www.ntigymnasiet.se/sodertalje/kontakta-oss/">sodertalje@ntig.se</a></li>
+                <li><a href="https://www.ntigymnasiet.se/sodertalje/kontakta-oss/" target="https://www.ntigymnasiet.se/sodertalje/kontakta-oss/">Sydhamnsvägen 55-57, 151 38 Södertälje</a></li>
+            </ul>
+        </footer>
     </section>
-    <!--Ska det finnas en footer? kan ha samma linkar som topbar?, extra poäng för att vi använder oss utav layout element.-->
     <a href="#anchor">  
     <div class="box" id="box">
         <span></span>

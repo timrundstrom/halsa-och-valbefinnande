@@ -7,17 +7,116 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Om oss sida</title>
 
+    <link rel="stylesheet" type="text/css" href="../styles/text.css">
     <link rel="stylesheet" type="text/css" href="../styles/style.css">
     <link rel="stylesheet" type="text/css" href="../styles/scrolling.css">
     <link rel="stylesheet" type="text/css" href="../styles/topbar.css">
-    <link rel="stylesheet" type="text/css" href="../styles/text.css">
+    <link rel="stylesheet" type="text/css" href="../styles/flipcard.css">
 </head>
 
 <body>
 
     <section class="sec1 omoss" id="pic"></section>
     <section class="sectext"> 
-        <h1 id="rubrik">Om oss</h1>
+        <div id="anchor"></div>
+        <h1 id="rubrik">Om oss</h1>  
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../images/author_images/stefan.jpg" alt="Stefan Kundadzija">
+                </div>
+                <div class="flip-card-back" id="fc-röd">
+                    <h1 class="fc-title">Stefan Kundadzija</h1>
+                    <h2 clasS="fc-undertitle">GitHub: @StefaK</h2>
+                    <p>Arbetsupppgifter</p>
+                    <ul class="uppgifterlist">
+                        <li>Arbetsledare</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../images/author_images/tim.jpg" alt="Tim Rundström">
+                </div>
+                <div class="flip-card-back" id="fc-blå">
+                    <h1 class="fc-title">Tim Rundström</h1>
+                    <h2 class="fc-undertitle">GitHub: @timrundstrom</h2>
+                    <p>Arbetsuppgifter</p>
+                    <ul class="uppgifterlist">
+                        <li>Text</li>
+                        <li>Bildbehandling</li>
+                        <li>Lincenshantering</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../images/author_images/saman.jpg" alt="Saman Al-Khameesi">
+                </div>
+                <div class="flip-card-back" id="fc-grön">
+                    <h1 class="fc-title">Saman Al-Khameesi</h1>
+                    <h2 class="fc-undertitle">GitHub: @DiabloBound</h2>
+                    <p>Arbetsuppgifter</p>
+                    <ul class="uppgifterlist">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Om-oss sidan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../images/author_images/kristoffer.jpg" alt="Kristoffer Barsum">
+                </div>
+                <div class="flip-card-back" id="fc-lila">
+                    <h1 class="fc-title">Kristoffer Barsum</h1>
+                    <h2 class="fc-undertitle">GitHub: @KRISTOFFER9918</h2>
+                    <p>Arbetsuppgifter</p>
+                    <ul class="uppgifterlist">
+                        <li>Text</li>
+                        <li>Bildbehandling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            
+            
+        
+        <div id="stycke">
+            <p>
+                "Hälsa och välbefinnande" har varit ett grupp projekt i klass TE17 på NTI-gymnasiet Södertälje vilket skulle betona
+                det tredje målet av De Globala Målen; god hälsa och välbefinnande. Projektet undergick under februari månad 2019 och
+                styrdes av Stefan Kundadzija som projektledare.
+            </p>
+        </div>
+
+        <footer>
+            <ul id="footer-left">
+                <li><a href="https://www.ntigymnasiet.se/sodertalje/" target="_blank">NTI-gymnasiet</a></li>
+                <li><a href="https://www.ntigymnasiet.se/program/informations-och-medieteknik/sodertalje/" target="_blank">Teknik Programmet</a></li>
+                <li><a href="https://www.ntigymnasiet.se/sodertalje/oppet-hus/" target="_blank">Öppet hus</a></li>
+            </ul>
+            <a href="https://www.ntigymnasiet.se/sodertalje/" target="_blank"><img src="../images/nti_images/logo.png"></a>
+            <ul id="footer-right">
+                <li><a href="https://www.ntigymnasiet.se/sodertalje/kontakta-oss/" target="https://www.ntigymnasiet.se/sodertalje/kontakta-oss/">Kontakt:</a></li>
+                <li><a href="https://www.ntigymnasiet.se/sodertalje/kontakta-oss/" target="https://www.ntigymnasiet.se/sodertalje/kontakta-oss/">08-550 838 52</a></li>
+                <li><a href="https://www.ntigymnasiet.se/sodertalje/kontakta-oss/" target="https://www.ntigymnasiet.se/sodertalje/kontakta-oss/">sodertalje@ntig.se</a></li>
+                <li><a href="https://www.ntigymnasiet.se/sodertalje/kontakta-oss/" target="https://www.ntigymnasiet.se/sodertalje/kontakta-oss/">Sydhamnsvägen 55-57, 151 38 Södertälje</a></li>
+            </ul>
+        </footer>
     </section>
     
     <a href="#anchor">  
@@ -44,6 +143,7 @@
     	</ul>
     </nav>
     <div id="anchor"></div>
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="../scripts/script.js"></script>

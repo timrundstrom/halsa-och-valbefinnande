@@ -41,7 +41,55 @@ div.widepic{
 	height: 450px;
 }
 div#mountain{
-	background-image: url(../images/daylight-environment-forest.jpg); 
+	background-image: url(../images/wide_images/daylight-environment-forest.jpg); 
 	/* https://www.pexels.com/photo/daylight-environment-forest-idyllic-459225/ 
 	from 6000x2848 to 6000x1500*/
+}
+
+
+/*				FOOTER 					*/
+
+footer{
+	display: block;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background-color: black;
+	opacity: 1;
+}
+footer ul{
+	position: absolute;
+	top: 0;
+	font-family: 'Asap';
+	font-size: 20px;
+	display: inline;
+}
+footer ul#footer-left{
+	left: 0;
+}footer ul#footer-right{
+	right: 0;
+}
+footer ul li{
+	display: inline;
+	margin: 20px;
+	color: white;
+	padding: 10px 20px;
+	transition: .5s;
+}
+footer img{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	top: 15px;
+	left: 700px;
+}
+footer ul li a{
+	text-decoration: none;
+	color: white;
+}
+footer ul li:hover{
+	color: #fff;
+	background: #333;
+	cursor: pointer;
 }

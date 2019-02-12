@@ -13,7 +13,7 @@ section.sectext{
 	position: relative;
 }
 
-section.sectext h1{
+section.sectext #rubrik{
     margin: 0;
     padding: 0;
 	font-size: 48px;
@@ -24,7 +24,7 @@ section.sectext h1{
 	font-weight: bold;
 	text-transform: uppercase;
 }
-section.sectext h2{
+section.sectext #underrubrik{
 	margin-top: 50px;
 	padding: 0;
 	font-size: 30px;
@@ -53,4 +53,12 @@ div#anchor{
 	position: absolute;
 	top: -80px;
 	z-index: -1;
+}
+section.sectext div#stycke{
+	font-family: 'Asap';
+	font-size: 25px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	line-height: 50px;
+	width: 1000px;
 }
