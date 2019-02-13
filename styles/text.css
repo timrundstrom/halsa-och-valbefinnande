@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Secular+One');
 
 section.sectext{
-	height: 89vh;
+	height: 100%;
     width: 100%;
 	background-color: #f6f6f6;
 	background-position: center;
