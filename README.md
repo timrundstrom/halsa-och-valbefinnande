@@ -61,15 +61,6 @@ Taken from: https://pxhere.com/en/photo/1033231
 
 ----
 
-- **Leaf**
-
-Free for commercial use and changes. (CC0 Public Domain)
-
-Changes: Background (Removed white background)
-
-Taken from: https://pxhere.com/en/photo/9571395 
-
-----
 
 - **Hjälstaviken**
 
@@ -86,18 +77,6 @@ Taken from: https://sv.wikipedia.org/wiki/Fil:Hj%C3%A4lstaviken_02.jpg
 ----
 
 - **Jump**
-
-Free for commercial use and changes. (Pixabay lincense)
-
-Changes: Resolution (from: 1920×1271, to: 1920×1080)
-
-Image author: (Free-Photos)
-
-Taken from: https://pixabay.com/sv/hoppa-vatten-bada-utomhus-dyk-1209647/
-
-----
-
-- **Jump v2**
 
 Free for commercial use and changes. (Pixabay lincense)
 
@@ -118,3 +97,25 @@ Changes: Resolution (from: 1920×1280, to: 1920×1080)
 Image author: nikhillokhandecmpn
 
 Taken from: https://pixabay.com/sv/joy-liggande-sj%C3%B6-glad-m%C3%A4nniskor-1494575/ 
+
+----
+
+- **Daylight-enivorment-forest**
+
+Free for commercial use and changes. (CC0 Public Domain)
+
+Changes: Resolution (from: 6000×2848, to: 6000×1500)
+
+Taken from: https://www.pexels.com/photo/daylight-environment-forest-idyllic-459225/ 
+
+----
+
+- **landscape**
+
+Free for commercial use anc changes. (Pixabay license)
+
+Changes: Resolution (from: 3197×1110, to: 3197×800)
+
+Image author: ramboldheiner
+
+Taken from: https://pixabay.com/sv/landskap-natur-bred-sun-2947094/

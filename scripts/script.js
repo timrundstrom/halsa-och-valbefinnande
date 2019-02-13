@@ -31,9 +31,8 @@ function parallax(){
 
 function slider(){
     if ( $img.is( '.main' ) ){
-        let index = 1;
         $img.css( 'transition' , 'all 1s ease' );
-
+        let index = 1;
         setInterval(function(){
             if (index === sliderImages.length){
                 index = 0;

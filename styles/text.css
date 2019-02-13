@@ -1,3 +1,4 @@
+@charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Secular+One');
 
 section.sectext{
@@ -48,12 +49,6 @@ section.sectext div.stycke{
 div.stycke p{
 	padding-top: 50px;
 }
-
-div#anchor{
-	position: absolute;
-	top: -80px;
-	z-index: -1;
-}
 section.sectext div#stycke{
 	font-family: 'Asap';
 	font-size: 25px;
@@ -61,4 +56,22 @@ section.sectext div#stycke{
 	margin-bottom: 10px;
 	line-height: 50px;
 	width: 1000px;
+}
+
+
+/*anchors*/
+div#anchor1{
+	position: absolute;
+	top: -80px;
+	z-index: -1;
+}
+div#anchor2{
+	position: absolute;
+	bottom: 80px;
+	z-index: -1;
+}
+div#anchor3{
+	position: absolute;
+	bottom: 80px;
+	z-index: -1;
 }

@@ -1,4 +1,6 @@
+@charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Asap');
+
 html{
 	scroll-behavior: smooth;
 }
@@ -24,31 +26,29 @@ section.sec1{
 	background-image: url(../images/slider_images/avenue.jpg);
 }
 
+/*FOR PARALLAX FUNCTION IN script.js*/
 .notransition{
 	transition: none !important;
 }
 
-div.widepicbox {
-	position: relative;
-	margin: 50px auto;
-}
 
+/*WIDE PICS*/
 div.widepic{
 	position: relative;
-	background-image: url(../images/daylight-environment-forest.jpg); 
+	margin: 50px auto;
 	background-size: 100%;
 	width: 100%;
 	height: 450px;
 }
 div#mountain{
 	background-image: url(../images/wide_images/daylight-environment-forest.jpg); 
-	/* https://www.pexels.com/photo/daylight-environment-forest-idyllic-459225/ 
-	from 6000x2848 to 6000x1500*/
+}
+div#landscape{
+	background-image: url(../images/wide_images/landscape.jpg)
 }
 
 
-/*				FOOTER 					*/
-
+/*FOOTER*/
 footer{
 	display: block;
 	position: relative;
