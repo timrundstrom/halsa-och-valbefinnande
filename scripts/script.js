@@ -35,7 +35,7 @@ function slider(){
         let index = 1;
         setInterval(function(){
             if (index === sliderImages.length){
-                index = 0;
+                index = 1;
             }
             $img.css( 'backgroundImage' , `url(../images/slider_images/${sliderImages[index]}.jpg)` );
             index++;

@@ -1,6 +1,9 @@
 # Hälsa och välbefinnande
 Group project by a technology class at NTI-gymnasiet Södertälje (2019).
 
+OBS!
+The website is made for 100% fontsize on monitors and isn't responsive, if the site looks wrong then take a look at your image settings.
+
 # Author/s
 - **StefaK**
 - **timrundstrom**
