@@ -122,3 +122,10 @@ Changes: Resolution (from: 3197×1110, to: 3197×800)
 Image author: ramboldheiner
 
 Taken from: https://pixabay.com/sv/landskap-natur-bred-sun-2947094/
+
+----
+
+# Author images
+
+All four author images are protected by the swedish copyright act (upphovsrättslagen) and may not be used.
+
