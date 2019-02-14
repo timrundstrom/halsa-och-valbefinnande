@@ -1,19 +1,16 @@
 $(() => {
 
     assembleHtml();
-
+    eventHandler();
     startSlideshow();
     
-    $("nav ul li").hover(_ => {
-        $(".contentSection, #background").toggleClass("blur");
-    });
 });
 
 let startSlideshow = () => {
 
     let imgFolder = "/data/images/";
 
-    $("#background").backstretch([
+    $(".background").backstretch([
         imgFolder + "avenue.jpg",
         imgFolder + "backpack.jpg",
         imgFolder + "daisy.jpg",
@@ -29,13 +26,14 @@ let startSlideshow = () => {
 },
 
 assembleHtml = () => {
+
     let z, i, elmnt, file, xhttp;
     /* Loop through a collection of all HTML elements: */
     z = document.getElementsByTagName("*");
     for (i = 0; i < z.length; i++) {
         elmnt = z[i];
         /*search for elements with a certain atrribute:*/
-        file = elmnt.getAttribute("w3-include-html");
+        file = elmnt.getAttribute("include-html");
         if (file) {
         /* Make an HTTP request using the attribute value as the file name: */
         xhttp = new XMLHttpRequest();
@@ -44,7 +42,7 @@ assembleHtml = () => {
             if (this.status == 200) {elmnt.innerHTML = this.responseText;}
             if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
             /* Remove the attribute, and call this function once more: */
-            elmnt.removeAttribute("w3-include-html");
+            elmnt.removeAttribute("include-html");
             assembleHtml();
             }
         }
@@ -54,4 +52,43 @@ assembleHtml = () => {
         return;
     }
   }
+
+},
+
+eventHandler = () => {
+    let pixelsBeforeChange = 10;
+
+    //STICKY NAVBAR
+    $(window).bind("scroll", () => {
+        if ($(window).scrollTop() > pixelsBeforeChange)
+            $("body nav ul").addClass("stickyNavbar");
+        else 
+            $("body nav ul").removeClass("stickyNavbar");
+    });
+
+    //SCROLL TO A CERTAIN ELEMENT ON CLICK
+    $("#testBTN").click(() => {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#intro").offset().top
+        }, 1000);
+    });
+
+    $("#sidegoalsBTN").click(() => {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#sidegoals").offset().top
+        }, 1000);
+    });
+
+    $("#tipsBTN").click(() => {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#tips").offset().top
+        }, 1000);
+    });
+
+    $("#teamBTN").click(() => {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#aboutUs").offset().top
+        }, 1000);
+    });
 }
+

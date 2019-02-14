@@ -1,0 +1,90 @@
+@media screen and ( min-width: 970px) {
+    
+    #mobileNavTop, #mobileNavTopContent {
+        display: none;
+    }
+
+    body nav {
+        width: 100%;
+        height: 10vh;
+        z-index: 4;
+    }
+
+    body nav ul {
+        width: 100%;
+        height: 10vh;
+        list-style: none;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.25);
+        z-index: 5;
+        transition: 0.5s;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+    
+    body nav ul li {
+        width: 10%;
+        height: 5vh;
+        z-index: 6;
+        line-height: 5vh;
+        background-color: rgba(0, 0, 0, 0.75);
+        text-align: center;
+        transition: 0.2s;
+        border-radius: 5%;
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+    
+    body nav ul li:hover {
+        cursor: pointer;
+        transform: scale(1.5);
+    }
+}
+
+@media screen and (max-width: 970px) {
+    
+    #pcNav {
+        display: none;
+    }
+
+    #mobileNavTop {
+        position: fixed;
+        width: 100%;
+        height: 10vh;
+        left: 0;
+        right: 0;
+        background-color: blue;
+        z-index: 11;
+        color: white;
+        font-size: 5vw;
+        align-items: flex-start;
+    }
+
+    #mobileNavTop .topNavResponsiveButton {
+        margin-left: 5%;
+    }
+
+    #mobileNavTopContent {
+        position: fixed;
+        left: 0;
+        top: 10vh;
+        width: 100%;
+        height: 90vh;
+        background-color: black;
+        z-index: 10;
+        color: white;
+    }
+
+    #mobileNavTopContent ul {
+        list-style: none;
+        width: 100%;
+        height: 100%;
+        z-index: 11;
+    }
+
+    .topNavResponsiveButton:hover {
+        cursor: pointer;
+    }
+
+}

@@ -4,34 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="/data/style/style.css">
-    <link rel="stylesheet" type="text/css" href="/data/style/flipster.css">
+    <link rel="stylesheet" type="text/css" href="/data/style/base.css">
     <title>Hälsa och välbefinnande</title>
 </head>
 
-<body class="flex">
-    <div id="background"></div>
-    <nav class="flex flexRow">
+<body class="background">
+    <nav id="pcNav" class="flex flexRow">
         <ul class="flex flexRow flexSpaceBetween">
-            <li>Test 1</li>
-            <li>Test 2</li>
-            <li>Test 3</li>
+            <li id="testBTN">Problemet</li>
+            <li id="sidegoalsBTN">Delmål</li>
+            <li id="tipsBTN">Tips</li>
+            <li id="teamBTN">Autörer</li>
         </ul>
     </nav>
 
-    <div id="coverflow">
+    <nav id="mobileNavTop" class="flex">
+            <div class="topNavResponsiveButton flex">&#9776;</div>
+    </nav>
+
+    <nav id="mobileNavTopContent" class="flex">
+            <ul class="flex flexSpaceBetween">
+                <li id="testBTN_M">Problemet</li>
+                <li id="sidegoalsBTN_M">Delmål</li>
+                <li id="tipsBTN_M">Tips</li>
+                <li id="teamBTN_M">Autörer</li>
+            </ul>
+    </nav>
+
+    <section class="emptySec"></section>
+    <section id="content">
+
+        <!-- PROJECT SPECIFIC CODE START-->
         <ul>
-            <li w3-include-html="/intro_header.html" ></li>
-            <li w3-include-html="/intro_content.html" class="hidden"></li>
-            <li w3-include-html="/sidegoals.html" class="hidden"></li>
-            <li w3-include-html="/tips.html" class="hidden"></li>
-            <li w3-include-html="/aboutUs.html" class="hidden"></li>
+            <li id="introTitle" class="flex contentItem" include-html="/projectSpecific/intro_header.html" ></li>
+            <li id="intro" class="flex contentItem" include-html="/projectSpecific/intro_content.html"></li>
+            <li id="sidegoals" class="flex contentItem" include-html="/projectSpecific/sidegoals.html"></li>
+            <li id="tips" class="flex contentItem" include-html="/projectSpecific/tips.html"></li>
+            <li id="aboutUs" class="flexRow flexSpaceBetween flex contentItem" include-html="/projectSpecific/aboutUs.html"></li>
         </ul>
-    </div>
+        <!-- PROJECT SPECIFIC CODE END-->
+
+    </section>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="/data/scripts/jquery.backstretch.js"></script>
-    <script type="text/javascript" src="/data/scripts/flipster.min.js"></script>
     <script type="text/javascript" src="/data/scripts/script.js"></script>
 
 </body>
