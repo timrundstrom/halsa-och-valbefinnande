@@ -37,11 +37,11 @@ function slider(){
             if (index === sliderImages.length){
                 index = 0;
             }
-            $img.css( 'backgroundImage' , `url(../images/slider_images/${sliderImages[index]}.jpg)` );
+            $img.css( 'backgroundImage' , `url(./images/slider_images/${sliderImages[index]}.jpg)` );
             index++;
         }, sliderTimer)
 
     }else{
-        $img.css( 'backgroundImage' , 'url(../images/nti_images/NTI.png)' );
+        $img.css( 'backgroundImage' , 'url(./images/nti_images/NTI.png)' );
     }
 }
