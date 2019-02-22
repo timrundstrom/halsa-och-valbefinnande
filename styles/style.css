@@ -1,23 +1,23 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Asap');
 
-html{
+html {
 	scroll-behavior: smooth;
 }
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-section{
+section {
 	height: 100vh;
 	width: 100%;
 	box-sizing: border-box;
 }
 
-section.sec1{
+section.sec1 {
 	
 	background-size: 150%;
 	background-position: center center;
@@ -27,29 +27,29 @@ section.sec1{
 }
 
 /*FOR PARALLAX FUNCTION IN script.js*/
-.notransition{
+.notransition {
 	transition: none !important;
 }
 
 
 /*WIDE PICS*/
-div.widepic{
+div.widepic {
 	position: relative;
 	margin: 50px auto;
 	background-size: 100%;
 	width: 100%;
 	height: 450px;
 }
-div#mountain{
+div#mountain {
 	background-image: url(../images/wide_images/daylight-environment-forest.jpg); 
 }
-div#landscape{
+div#landscape {
 	background-image: url(../images/wide_images/landscape.jpg)
 }
 
 
 /*FOOTER*/
-footer{
+footer {
 	display: block;
 	position: relative;
 	bottom: 0;
@@ -65,11 +65,15 @@ footer ul{
 	font-size: 20px;
 	display: inline;
 }
+
 footer ul#footer-left{
 	left: 0;
-}footer ul#footer-right{
+}
+
+footer ul#footer-right{
 	right: 0;
 }
+
 footer ul li{
 	display: inline;
 	margin: 20px;
